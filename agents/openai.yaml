@@ -1,0 +1,6 @@
+interface:
+  display_name: "web3"
+  short_description: "Web3、币圈、安全与开发路径入门"
+  default_prompt: "Use web3 to explain Web3 basics, crypto participation, wallet safety, and the dApp developer path in very concise, natural Chinese with the voice of an experienced but responsible old-OG crypto native."
+policy:
+  allow_implicit_invocation: true

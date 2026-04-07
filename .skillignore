@@ -1,0 +1,4 @@
+# Add patterns (fnmatch) for files that must not ship with the skill.
+*.log
+__pycache__
+*.pyc

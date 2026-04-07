@@ -1,0 +1,69 @@
+# Glossary
+
+- `address`: wallet address used to receive assets and interact on-chain
+- `airdrop`: token distribution to users under a defined rule set
+- `alpha`: useful but often informal early information
+- `altcoin`: any crypto asset that is not the main benchmark coin in a discussion
+- `approval`: permission for a contract to spend a token on behalf of a wallet
+- `bear market`: prolonged weak market sentiment and price decline
+- `bridge`: a system used to move assets or messages between chains
+- `bull market`: strong market sentiment and rising prices
+- `cex`: centralized exchange
+- `contract`: smart contract deployed on-chain
+- `defi`: decentralized finance applications
+- `depeg`: a stable asset drifting away from its target price
+- `dex`: decentralized exchange
+- `dyor`: do your own research
+- `erc-20`: common fungible token standard on EVM chains
+- `erc-721`: common non-fungible token standard on EVM chains
+- `evm`: Ethereum Virtual Machine
+- `farm`: use capital in a protocol to earn incentives or fees
+- `fomo`: fear of missing out
+- `fud`: fear, uncertainty, and doubt
+- `gas`: network fee for computation and inclusion
+- `归零`: price collapsing close to zero
+- `hodl`: slang for long-term holding
+- `接盘`: buying after the move is already mature, often at a bad price
+- `jomo`: joy of missing out; resisting hype
+- `l1`: base blockchain layer
+- `l2`: scaling network built on top of an L1
+- `拉盘`: aggressive upward price push, organic or manipulated
+- `liquidity`: how easily an asset trades without heavy price impact
+- `market cap`: price multiplied by circulating supply
+- `meme coin`: attention-driven token with high volatility
+- `mint`: create or claim a new token or NFT
+- `nft`: non-fungible token
+- `node`: machine participating in a blockchain network
+- `on-chain`: recorded directly on a blockchain
+- `paper hands`: selling too early out of fear
+- `private key`: secret cryptographic key controlling an address
+- `public key`: cryptographic key used to derive or verify an address identity
+- `砸盘`: aggressive downward selling pressure
+- `rekt`: heavily financially damaged by a trade or market move
+- `restaking`: reusing staked assets or security guarantees in another system
+- `rpc`: remote procedure call endpoint used to talk to a chain
+- `rug`: a scam or collapse where insiders drain value or abandon the project
+- `seed phrase`: human-readable backup for wallet key material
+- `上车`: enter a position or join a narrative
+- `slippage`: price movement between quote and execution
+- `stablecoin`: token designed to track a stable reference such as USD
+- `staking`: locking assets in a protocol to support operations or earn rewards
+- `土狗`: high-risk small token, usually highly speculative
+- `testnet`: non-production network for testing
+- `tokenomics`: token supply, distribution, unlocks, and incentives
+- `tvl`: total value locked in a protocol
+- `wallet`: software or hardware used to manage keys and signatures
+- `whale`: large holder whose trades can move the market
+- `洗盘`: a shakeout move meant to scare weak holders out
+- `下车`: exit a position
+- `埋人`: trapping later buyers at poor prices or bad liquidity
+- `插针`: a sudden sharp wick up or down
+- `庄 / 主力`: the perceived dominant operator or large coordinated capital in a market
+- `巨鲸`: very large holder or trader
+- `聪明钱`: capital believed to move earlier or more intelligently than the crowd
+- `打狗`: trading highly speculative meme or microcap coins
+- `龙头`: the leading coin or project inside a narrative
+- `横盘`: sideways price movement without a clear trend
+- `瀑布`: fast cascading price drop
+- `爆仓`: forced liquidation of a leveraged position
+- `韭菜`: inexperienced retail participant who is easy to exploit
