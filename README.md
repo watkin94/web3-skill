@@ -1,10 +1,6 @@
 # web3.skill
 
 <p align="center">
-  <img src="./assets/readme/hero.svg" alt="web3.skill cover" width="100%" />
-</p>
-
-<p align="center">
   <strong>不是教材，也不是喊单群，是一个真懂圈子的 AI Skill</strong>
 </p>
 
@@ -27,7 +23,7 @@
 ## 一眼看效果
 
 <p align="center">
-  <img src="./assets/readme/demo-chat.png" alt="web3.skill demo chat" width="100%" />
+  <img src="./assets/readme/demo-chat.png" alt="web3.skill wechat-style demo chat" width="420" />
 </p>
 
 ## 它适合谁

@@ -3,20 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>web3.skill demo</title>
+  <title>web3.skill wechat demo</title>
   <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0b0e12;
-      --panel: rgba(20, 24, 29, 0.92);
-      --panel-2: rgba(28, 34, 40, 0.92);
-      --line: rgba(255, 255, 255, 0.08);
-      --line-soft: rgba(255, 255, 255, 0.05);
-      --text: #f5f7fa;
-      --muted: rgba(245, 247, 250, 0.60);
-      --subtle: rgba(245, 247, 250, 0.34);
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -24,230 +12,245 @@
     body {
       margin: 0;
       min-height: 100vh;
-      font-family: Inter, "SF Pro Display", "PingFang SC", "Microsoft YaHei", sans-serif;
-      background:
-        radial-gradient(circle at top right, rgba(226, 233, 241, 0.16), transparent 26%),
-        radial-gradient(circle at bottom left, rgba(122, 142, 160, 0.10), transparent 28%),
-        linear-gradient(160deg, #090b0e 0%, #12171d 100%);
-      color: var(--text);
       display: grid;
       place-items: center;
-      padding: 28px;
+      background: linear-gradient(180deg, #eef1f5 0%, #e4e9ef 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #111827;
+      padding: 32px;
     }
 
-    .frame {
-      width: 1420px;
-      min-height: 980px;
-      border-radius: 28px;
-      border: 1px solid var(--line);
-      background: rgba(10, 14, 18, 0.85);
-      box-shadow:
-        0 24px 80px rgba(0, 0, 0, 0.42),
-        inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    .phone {
+      width: 430px;
+      background: #f6f7f9;
+      border-radius: 44px;
+      padding: 14px;
+      box-shadow: 0 32px 80px rgba(15, 23, 42, 0.16);
+    }
+
+    .screen {
+      border-radius: 34px;
       overflow: hidden;
-      position: relative;
+      background: #ededed;
+      border: 1px solid rgba(17, 24, 39, 0.06);
     }
 
-    .frame::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 88px 88px;
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0));
-      pointer-events: none;
-    }
-
-    .topbar {
+    .status {
+      height: 42px;
+      background: #f7f7f7;
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      padding: 0 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    .dynamic-island {
+      width: 116px;
+      height: 30px;
+      border-radius: 18px;
+      background: #0f172a;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 22px;
+    }
+
+    .nav {
+      height: 58px;
+      background: #f7f7f7;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+      display: flex;
       align-items: center;
-      padding: 24px 30px;
-      border-bottom: 1px solid var(--line-soft);
+      justify-content: center;
       position: relative;
-      z-index: 1;
+      font-size: 18px;
+      font-weight: 600;
     }
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
-      font-size: 14px;
-      color: var(--muted);
-      letter-spacing: 0.02em;
+    .nav .back {
+      position: absolute;
+      left: 18px;
+      color: #111827;
+      font-size: 17px;
+      font-weight: 500;
     }
 
-    .badge .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: rgba(245, 247, 250, 0.86);
-      box-shadow: 0 0 24px rgba(245, 247, 250, 0.26);
-    }
-
-    .meta {
-      font-size: 14px;
-      color: var(--subtle);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 36px;
-      padding: 42px 34px 0 34px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .headline h1 {
-      margin: 0;
-      font-size: 60px;
-      line-height: 1.04;
-      letter-spacing: -0.05em;
-      font-weight: 700;
-    }
-
-    .headline p {
-      margin: 18px 0 0;
-      max-width: 760px;
-      font-size: 21px;
-      line-height: 1.65;
-      color: var(--muted);
-    }
-
-    .card {
-      border-radius: 24px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.03);
-      padding: 20px 22px;
+    .chat {
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,0.26), transparent 45%),
+        #ededed;
+      padding: 18px 14px 22px;
       display: flex;
       flex-direction: column;
       gap: 14px;
-      backdrop-filter: blur(10px);
     }
 
-    .card-title {
-      font-size: 14px;
-      color: var(--subtle);
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+    .msg-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
     }
 
-    .card p {
-      margin: 0;
-      font-size: 18px;
-      line-height: 1.7;
-      color: rgba(245,247,250,0.86);
+    .msg-row.user {
+      justify-content: flex-end;
     }
 
-    .conversation {
-      padding: 28px 34px 36px;
-      display: grid;
-      gap: 18px;
+    .avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: linear-gradient(180deg, #d8dee6 0%, #c7d0db 100%);
+      border: 1px solid rgba(17, 24, 39, 0.06);
+      flex: 0 0 auto;
+    }
+
+    .avatar.skill {
+      background: linear-gradient(180deg, #0f172a 0%, #1f2937 100%);
       position: relative;
-      z-index: 1;
+    }
+
+    .avatar.skill::after {
+      content: "w3";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: #f8fafc;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .avatar.user {
+      background: linear-gradient(180deg, #d7ecb9 0%, #bfe294 100%);
     }
 
     .bubble {
-      max-width: 76%;
-      border-radius: 26px;
-      padding: 20px 22px;
-      border: 1px solid var(--line);
-      background: var(--panel);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+      max-width: 292px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      font-size: 16px;
+      line-height: 1.55;
+      box-shadow: 0 1px 0 rgba(17, 24, 39, 0.04);
+      position: relative;
+      word-break: break-word;
     }
 
-    .bubble.user {
-      margin-left: auto;
-      background: var(--panel-2);
+    .bubble.receive {
+      background: #ffffff;
+      color: #111827;
+      border-top-left-radius: 6px;
     }
 
-    .role {
-      margin: 0 0 8px;
+    .bubble.send {
+      background: #95ec69;
+      color: #111827;
+      border-top-right-radius: 6px;
+    }
+
+    .time {
+      align-self: center;
+      background: rgba(15, 23, 42, 0.08);
+      color: rgba(17, 24, 39, 0.60);
+      border-radius: 999px;
+      padding: 4px 10px;
       font-size: 12px;
-      color: var(--subtle);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-    }
-
-    .bubble p {
-      margin: 0;
-      font-size: 20px;
-      line-height: 1.7;
-      color: rgba(245,247,250,0.92);
+      margin: 2px 0 2px;
     }
 
     code {
-      font-family: "SF Mono", Consolas, "Courier New", monospace;
-      padding: 2px 7px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.10);
-      background: rgba(255,255,255,0.05);
-      font-size: 0.9em;
+      background: rgba(15, 23, 42, 0.06);
+      border-radius: 8px;
+      padding: 1px 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    .inputbar {
+      height: 66px;
+      background: #f7f7f7;
+      border-top: 1px solid rgba(15, 23, 42, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 14px;
+    }
+
+    .plus, .voice {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid rgba(17, 24, 39, 0.08);
+      display: grid;
+      place-items: center;
+      color: rgba(17, 24, 39, 0.64);
+      font-size: 18px;
+      background: #ffffff;
+    }
+
+    .input {
+      flex: 1;
+      height: 38px;
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid rgba(17, 24, 39, 0.06);
     }
   </style>
 </head>
 <body>
-  <main class="frame">
-    <header class="topbar">
-      <div class="badge">
-        <span class="dot"></span>
-        <span>web3.skill demo</span>
+  <div class="phone">
+    <div class="dynamic-island"></div>
+    <div class="screen">
+      <div class="status">
+        <span>9:41</span>
+        <span>5G 100%</span>
       </div>
-      <div class="meta">old og tone · minimal premium · zh-cn</div>
-    </header>
-
-    <section class="hero">
-      <div class="headline">
-        <h1>不是教材，也不是喊单群，<br />是一个真懂圈子的 AI Skill</h1>
-        <p>短答优先，先说人话。懂 <code>rug</code>、懂 <code>DeFi</code>、也知道新手最容易死在什么地方。</p>
+      <div class="nav">
+        <span class="back">‹ 微信</span>
+        <span>web3.skill</span>
       </div>
+      <div class="chat">
+        <div class="time">下午 3:16</div>
 
-      <aside class="card">
-        <div class="card-title">What it feels like</div>
-        <p>像一个混过几轮周期、踩过坑、会提醒你别乱冲的老 OG，直接把话说明白。</p>
-      </aside>
-    </section>
+        <div class="msg-row user">
+          <div class="bubble send">rug 是什么意思？</div>
+          <div class="avatar user"></div>
+        </div>
 
-    <section class="conversation">
-      <article class="bubble user">
-        <div class="role">User</div>
-        <p><code>rug 是什么意思？</code></p>
-      </article>
+        <div class="msg-row">
+          <div class="avatar skill"></div>
+          <div class="bubble receive">就是 <code>rug pull</code>，简单说就是项目方把桌布一抽，人全摔下去。圈里说某个币会 rug，基本就是在说它可能直接埋人。</div>
+        </div>
 
-      <article class="bubble">
-        <div class="role">web3.skill</div>
-        <p>就是 <code>rug pull</code>，简单说就是项目方把桌布一抽，人全摔下去。圈里说某个币会 rug，基本就是在说它可能直接埋人。</p>
-      </article>
+        <div class="msg-row user">
+          <div class="bubble send">币圈如何套利？</div>
+          <div class="avatar user"></div>
+        </div>
 
-      <article class="bubble user">
-        <div class="role">User</div>
-        <p><code>币圈如何套利？</code></p>
-      </article>
+        <div class="msg-row">
+          <div class="avatar skill"></div>
+          <div class="bubble receive">先别把套利想成无风险搬砖。说白了你是在和手续费、滑点、到账速度赛跑，新手最容易死在成本没算清。</div>
+        </div>
 
-      <article class="bubble">
-        <div class="role">web3.skill</div>
-        <p>先别把套利想成无风险搬砖。说白了你是在和手续费、滑点、到账速度赛跑，新手最容易死在成本没算清。</p>
-      </article>
+        <div class="msg-row user">
+          <div class="bubble send">什么是 DeFi？</div>
+          <div class="avatar user"></div>
+        </div>
 
-      <article class="bubble user">
-        <div class="role">User</div>
-        <p><code>什么是 DeFi？</code></p>
-      </article>
-
-      <article class="bubble">
-        <div class="role">web3.skill</div>
-        <p>你先把 DeFi 理解成“把金融服务搬到链上”。借贷、交易、赚收益都能做，只是规则不靠柜台和平台，更多写在合约里。</p>
-      </article>
-    </section>
-  </main>
+        <div class="msg-row">
+          <div class="avatar skill"></div>
+          <div class="bubble receive">你先把 DeFi 理解成“把金融服务搬到链上”。借贷、交易、赚收益都能做，只是规则不靠柜台和平台，更多写在合约里。</div>
+        </div>
+      </div>
+      <div class="inputbar">
+        <div class="voice">＋</div>
+        <div class="input"></div>
+        <div class="plus">⌕</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
