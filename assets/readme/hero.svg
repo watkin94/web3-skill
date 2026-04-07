@@ -1,0 +1,79 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A0D10"/>
+      <stop offset="1" stop-color="#12161B"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="300" y1="220" x2="1320" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7FA" stop-opacity="0.20"/>
+      <stop offset="0.5" stop-color="#9FB3C8" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#0A0D10" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="line" x1="930" y1="468" x2="1418" y2="468" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE4EC" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#F4F7FA" stop-opacity="0.55"/>
+    </linearGradient>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="28" fill="url(#bg)"/>
+  <rect x="56" y="56" width="1488" height="788" rx="24" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <g opacity="0.08">
+    <path d="M220 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M420 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M620 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M820 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M1020 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M1220 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M1420 80V820" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M120 180H1480" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M120 340H1480" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M120 500H1480" stroke="#F4F7FA" stroke-width="1"/>
+    <path d="M120 660H1480" stroke="#F4F7FA" stroke-width="1"/>
+  </g>
+
+  <ellipse cx="1230" cy="210" rx="220" ry="120" fill="#E7EDF4" fill-opacity="0.16" filter="url(#soft)"/>
+  <ellipse cx="1180" cy="680" rx="260" ry="160" fill="#6F8598" fill-opacity="0.12" filter="url(#soft)"/>
+  <rect x="918" y="210" width="480" height="520" rx="22" fill="#0E1217" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="952" y="246" width="410" height="58" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <circle cx="992" cy="275" r="5" fill="#F4F7FA" fill-opacity="0.64"/>
+  <circle cx="1014" cy="275" r="5" fill="#F4F7FA" fill-opacity="0.20"/>
+  <circle cx="1036" cy="275" r="5" fill="#F4F7FA" fill-opacity="0.20"/>
+  <text x="952" y="176" fill="#F4F7FA" fill-opacity="0.54" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" letter-spacing="0.24em">A SKILL FOR PEOPLE WHO WANT THE MAP, NOT THE NOISE</text>
+
+  <path d="M962 606C1011 560 1046 580 1088 510C1125 449 1162 462 1204 404C1240 354 1282 370 1318 322" stroke="url(#line)" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1318" cy="322" r="7" fill="#F4F7FA"/>
+  <rect x="1178" y="504" width="152" height="42" rx="21" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1207" y="531" fill="#F4F7FA" fill-opacity="0.82" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="18">old OG tone</text>
+  <rect x="978" y="504" width="152" height="42" rx="21" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1005" y="531" fill="#F4F7FA" fill-opacity="0.82" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="18">slang fluent</text>
+  <rect x="978" y="562" width="210" height="42" rx="21" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1006" y="589" fill="#F4F7FA" fill-opacity="0.82" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="18">safer beginner path</text>
+
+  <rect x="120" y="120" width="112" height="34" rx="17" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="151" y="142" fill="#F4F7FA" fill-opacity="0.80" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="16">web3.skill</text>
+
+  <text x="120" y="288" fill="#F4F7FA" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="112" font-weight="700" letter-spacing="-0.05em">web3.skill</text>
+  <text x="126" y="354" fill="#D7E0E9" fill-opacity="0.76" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="24" letter-spacing="0.02em">不是教材，也不是喊单群，是一个真懂圈子的 AI Skill</text>
+
+  <text x="120" y="458" fill="#F4F7FA" fill-opacity="0.92" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="28">
+    把 Web3、币圈黑话、人物、项目和避坑经验，
+  </text>
+  <text x="120" y="500" fill="#F4F7FA" fill-opacity="0.92" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="28">
+    压成一个会说人话、也会提醒你别死的 AI Skill。
+  </text>
+
+  <text x="120" y="612" fill="#F4F7FA" fill-opacity="0.42" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="18">COVERS</text>
+  <text x="120" y="652" fill="#F4F7FA" fill-opacity="0.85" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="22">Web3 basics</text>
+  <text x="296" y="652" fill="#F4F7FA" fill-opacity="0.85" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="22">Crypto slang</text>
+  <text x="486" y="652" fill="#F4F7FA" fill-opacity="0.85" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="22">People</text>
+  <text x="616" y="652" fill="#F4F7FA" fill-opacity="0.85" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="22">Projects</text>
+  <text x="770" y="652" fill="#F4F7FA" fill-opacity="0.85" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="22">Pitfalls</text>
+  <text x="904" y="652" fill="#F4F7FA" fill-opacity="0.85" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="22">Dev path</text>
+
+  <text x="120" y="752" fill="#F4F7FA" fill-opacity="0.30" font-family="Inter, PingFang SC, Microsoft YaHei, sans-serif" font-size="16" letter-spacing="0.20em">FOR PEOPLE WHO WANT CONTEXT, NOT JUST NOISE</text>
+  <rect x="120" y="776" width="220" height="3" rx="1.5" fill="url(#glow)"/>
+</svg>

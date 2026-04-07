@@ -1,7 +1,12 @@
 # web3.skill
 
-> 一个会说人话的 Web3 / 币圈 AI Skill。  
-> 懂基础，懂黑话，懂人物，懂项目，也懂新手最容易怎么死。
+<p align="center">
+  <img src="./assets/readme/hero.svg" alt="web3.skill cover" width="100%" />
+</p>
+
+<p align="center">
+  <strong>不是教材，也不是喊单群，是一个真懂圈子的 AI Skill</strong>
+</p>
 
 ![GitHub stars](https://img.shields.io/github/stars/watkin94/web3-skill?style=social)
 ![GitHub last commit](https://img.shields.io/github/last-commit/watkin94/web3-skill)
@@ -18,6 +23,12 @@
 - `懂圈内黑话，但不故作神秘`
 - `有老 OG 味，但不带你瞎冲`
 - `能讲 Web3，也能讲币圈，也知道哪里最容易埋人`
+
+## 一眼看效果
+
+<p align="center">
+  <img src="./assets/readme/demo-chat.png" alt="web3.skill demo chat" width="100%" />
+</p>
 
 ## 它适合谁
 
